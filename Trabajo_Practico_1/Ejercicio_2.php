@@ -7,8 +7,10 @@
     </title>
   </head>
   <body>
+    <h4>
+      Ejercicio N°2
+    </h4>
     <?php
-    echo "<br>";
     echo "a)Arreglos vectoriales simples: \n";
     $arr_vect_simple_1[0]=3;
     $arr_vect_simple_1[1]=4;
@@ -23,7 +25,6 @@
     $arr_vect_simple_4[]="estas?";
     $arr_vect_simple_5 = [0 => 8,1 => 9,2 => 10,19 => 14,20 => "estas?"];
     $arr_vect_simple_6 = [0 => 8, 9, 10, 19 => 14, "estas?"];
-
     echo "<pre>";
     echo "Arreglo 1 \n";
     print_r($arr_vect_simple_1);
@@ -39,17 +40,19 @@
     print_r($arr_vect_simple_6);
     echo "</pre>";
 
+    echo "<br><br>";
     echo "b)Arreglo asociativo simple: \n";
     $arr_asoc_simple['id']="usuario";
     $arr_asoc_simple['password']="contraseña";
     $arr_asoc_simple['address']="direccion";
     $arr_asoc_simple['telephone']="telefono";
     $arr_asoc_simple['email']="email";
-
     echo "<pre>";
     print_r($arr_asoc_simple);
     echo "</pre>";
 
+    echo "<br><br>";
+    echo "c)Arreglo vectorial de tres dimensiones: \n";
     $arr_vect_3d = array(
       array(
        array("Canada","Estados Unidos"),
@@ -64,9 +67,6 @@
        array("Lisboa","Madrid")
      )
     );
-
-    echo "<br><br>";
-    echo "c)Arreglo vectorial de tres dimensiones: \n";
     echo "<pre>";
     print_r($arr_vect_3d);
     echo "</pre>";
@@ -75,23 +75,15 @@
     $arr_vect_3d[0][0]['Canada']="Ottawa";
     $arr_vect_3d[0][0]['Estados Unidos']="Nueva York";
     $arr_vect_3d[0][0]['Brasil']="Brasilia";
-    $arr_vect_3d[0][0]['Estados Unidos']="Nueva York";
-    $arr_vect_3d[0][0]['Brasil']="Brasilia";
     $arr_vect_3d[0][0]['Argentina']="Buenos Aires";
     $arr_vect_3d[0][0]['Portugal']="Lisboa";
     $arr_vect_3d[0][0]['España']="Madrid";
-    $arr_vect_3d[0][1]['Canada']="Toronto";
-    $arr_vect_3d[0][1]['Estados Unidos']="Los Angeles";
-    $arr_vect_3d[0][1]['Brasil']="Rio de Janeiro";
-    $arr_vect_3d[0][1]['Argentina']="Mendoza";
-    $arr_vect_3d[0][1]['Portugal']="Benfica";
-    $arr_vect_3d[0][1]['España']="Barcelona";
-
-    echo "<br><br>";
     echo "<pre>";
     print_r($arr_vect_3d);
     echo "</pre>";
 
+    echo "<br><br>";
+    echo "d)Arreglo asociativo de dos dimensiones: \n";
     $arr_vect_2d['Canada'][0]="Ottawa";
     $arr_vect_2d['Estados Unidos'][0]="Nueva York";
     $arr_vect_2d['Brasil'][0]="Brasilia";
@@ -104,13 +96,11 @@
     $arr_vect_2d['Argentina'][1]="Mendoza";
     $arr_vect_2d['Portugal'][1]="Benfica";
     $arr_vect_2d['España'][1]="Barcelona";
-
-    echo "<br><br>";
-    echo "d)Arreglo asociativo de dos dimensiones: \n";
     echo "<pre>";
     print_r($arr_vect_2d);
     echo "</pre>";
 
+    echo "<br><br>";
     $arr_vect_2d = array(
       "Canada" => array("Ottawa","Toronto"),
       "Estados Unidos" => array("Nueva York","Los Angeles"),
@@ -119,8 +109,6 @@
       "Portugal" => array("Lisboa","Benfica"),
       "España" => array("Madrid","Barcelona")
     );
-
-    echo "<br><br>";
     echo "<pre>";
     print_r($arr_vect_2d);
     echo "</pre>";
