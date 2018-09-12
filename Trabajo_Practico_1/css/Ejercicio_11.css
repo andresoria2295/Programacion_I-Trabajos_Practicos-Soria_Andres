@@ -1,0 +1,15 @@
+.color_1{
+  color: blue;
+}
+
+.color_2{
+  color: brown;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table td{
+  border: 2px solid green;
+}
