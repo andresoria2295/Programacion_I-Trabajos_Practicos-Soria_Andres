@@ -15,67 +15,61 @@
   echo "<br><br>";
 
   if($_GET['check1']==1){
-    echo "<br><br>";
     echo "Checkbox 1: Seleccionado";
     echo "<br><br>";
   }
   else{
-    echo "<br><br>";
     echo "Checkbox 1: No Seleccionado";
+    echo "<br><br>";
   }
-  echo "<br><br>";
 
   if($_GET['check2']==2){
-    echo "<br><br>";
     echo "Checkbox 2: Seleccionado";
     echo "<br><br>";
   }
   else{
-    echo "<br><br>";
     echo "Checkbox 2: No Seleccionado";
+    echo "<br><br>";
   }
-  echo "<br><br>";
 
   if($_GET['check3']==3){
-    echo "<br><br>";
     echo "Checkbox 3: Seleccionado";
     echo "<br><br>";
   }
   else{
-    echo "<br><br>";
     echo "Checkbox 3: No Seleccionado";
+    echo "<br><br>";
   }
-  echo "<br><br>";
 
   echo "Radio Grupo 1:";
+  echo "<br><br>";
   if($_GET['grupo1']==1){
-    echo "<br><br>";
     echo "Elemento 1";
+    echo "<br><br>";
   }
   if($_GET['grupo1']==2){
-    echo "<br><br>";
     echo "Elemento 2";
+    echo "<br><br>";
   }
   if($_GET['grupo1']==3){
-    echo "<br><br>";
     echo "Elemento 3";
+    echo "<br><br>";
   }
-  echo "<br><br>";
 
   echo "Radio Grupo 2:";
+  echo "<br><br>";
   if($_GET['grupo2']==4){
-    echo "<br><br>";
     echo "Elemento 4";
+    echo "<br><br>";
   }
   if($_GET['grupo2']==5){
-    echo "<br><br>";
     echo "Elemento 5";
+    echo "<br><br>";
   }
   if($_GET['grupo2']==6){
-    echo "<br><br>";
     echo "Elemento 6";
+    echo "<br><br>";
   }
-  echo "<br><br>";
 
   echo "Lista desplegable: $option";
   echo "<br>";

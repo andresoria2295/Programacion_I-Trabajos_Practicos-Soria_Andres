@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>
+      Ejercicio N°12
+    </title>
   </head>
   <body>
-    <form action="Ejercicio_12.php" method="post">
-      <?php echo "Día: "; ?>
-      <select name="lista1">
-
+    <h4>
+      Ejercicio N°12
+    </h4>
+    <form action="Ejercicio_12a.php" method="POST">
+      Día:
+      <select name="day">
         <?php
-        for($i=1;$i<32;$i++){
-          $dia=date("j");
-          if($dia==$i){
-            echo "<option selected=\"selected\" value=\"$i\">$i</option>";
-          }else{
-            echo "<option value=\"$i\">$i</option>";
+          for ($i=1; $i <= 31 ; $i++) {
+            $dia = date("d");
+            if ($dia == $i) {
+              echo "<option selected=\"selected\" value=\"$i\">$i</option>";
+            }else{
+              echo "<option value=\"$i\">$i</option>";
+            }
           }
-        }
-        ?>
-
-      </select>
-      <?php echo "Mes: "; ?>
-      <select name="lista2">
-        <?php
-        for($i=1;$i<=12;$i++){
-          $month=date("F",mktime(0,0,0,$i,1));
-          $mes=date("F");
-          if($mes==$month){
-            echo "<option selected=\"selected\" value=\"$mes\">$mes</option>";
-          }else{
-            echo "<option value=\"$i\">$month</option>";
-          }
-        }
-        ?>
-
+         ?>
       </select>
 
-<?php echo "Año: "; ?>
-
-      <select name="lista3">
-
+      Mes:
+      <select name="month">
         <?php
-        for($i=1900;$i<2101;$i++){
-          $año=date("Y");
-          if($i==$año){
-            echo "<option selected=\"selected\" value=\"$i\">$año</option>";
-          }else{
-            echo "<option value=\"$i\">$i</option>";
+          for ($i=1; $i <= 12; $i++) {
+            $mth = date("F", mktime(0,0,0,$i,1));
+            $mes = date("F");
+            if($mes == $mth){
+              echo "<option selected=\"selected\" value=\"$mes\">$mes</option>";
+            }else{
+              echo "<option value=\"$i\">$mth</option>";
+            }
           }
-        }
-        ?>
-
+         ?>
       </select>
-      <br><br><input type="submit" name="datos" value="Enviar Datos">
+
+      Año:
+      <select name="year">
+        <?php
+          for ($i=1900; $i <= 2100 ; $i++) {
+            $año = date("Y");
+            if ($año == $i) {
+              echo "<option selected=\"selected\" value=\"$i\">$i</option>";
+            }else{
+              echo "<option value=\"$i\">$i</option>";
+            }
+          }
+         ?>
+      </select>
+      <br><br>
+      <input type="submit" value="Enviar datos">
     </form>
   </body>
 </html>

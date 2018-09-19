@@ -1,16 +1,13 @@
 <?php
-$suma=0;
-?>
-
-
-
-<?php
-for($i=1;$i<$_GET["cantidad"]+1;$i++){
-if($_GET["Check$i"]==on){
-echo "Se selecciono el Producto $i";
-echo "<br>";
-$suma=$suma+1;
-}
-}
-echo "La cantidad de Productos seleccionados es de: $suma";
-?>
+  $suma = 0;
+  echo "<br>";
+  for ($i=1; $i <= $_POST['cantidad']; $i++) {
+    if ($_POST["check$i"] == on) {
+      echo "Se ha seleccionado el producto $i";
+      echo "<br><br>";
+      $suma = $suma + 1;
+    }
+  }
+  echo "La cantidad de productos seleccionados es de: $suma";
+  echo "<br><br>";
+ ?>
