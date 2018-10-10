@@ -1,0 +1,7 @@
+
+1; Lucas; Castro; Luquitas_xeneize@gmail.com; Ingeniero Informático
+2; Daniel; Villalba; dani.mza@gmail.com; Ingeniero Electrónico
+3; Fernando; Sosa; fer_carp@gmail.com; Bioingeniero
+4; Agustín; Torreira; Agus_lasherino@gmail.com; Ingeniero Electromecánico
+5; Gabriel; Ahumada; Gaby.1995@gmail.com; Ingeniero Civil
+6; Pablo; Terrada; pablito.tombino@gmail.com; Ingeniero Industrial
