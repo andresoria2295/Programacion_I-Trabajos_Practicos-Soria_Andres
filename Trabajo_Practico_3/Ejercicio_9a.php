@@ -4,5 +4,5 @@
   $_SESSION['usuario'] = $_POST['usuario'];
   $_SESSION['clave'] = $_POST['clave'];
 
-  header('location: Ejercicio_6b.php');
+  header('location: Ejercicio_9b.php');
  ?>
