@@ -10,11 +10,11 @@
     <?php
       session_start();
 
-      $date_home = date("Y-m-d H:i:s");
+      $date_home = date('Y-m-d H:i:s');
       $_SESSION['date_home'] = $date_home;
 
       if (empty($_SESSION['usuario'])) {
-        $archivo = fopen('Registro_9.txt', "w+");
+        $archivo = fopen('Registro_9.txt', 'w+');
         fwrite($archivo, ' '.$_SESSION['date_home'].';Ejercicio_9b.php'.PHP_EOL);
         fclose($archivo);
         header('location: Retorno_9.php');
@@ -26,7 +26,7 @@
       echo "Usuario: {$_SESSION['usuario']}";
       echo "<br><br>";
 
-      $archivo = fopen('Registro_9.txt', "w+");
+      $archivo = fopen('Registro_9.txt', 'w+');
       fwrite($archivo, ' '.$_SESSION['date_home'].';Ejercicio_9b.php'.PHP_EOL);
       fclose($archivo);
       ?>

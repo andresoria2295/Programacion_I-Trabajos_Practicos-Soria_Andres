@@ -20,9 +20,9 @@
       echo "Usuario: {$_SESSION['usuario']}";
       echo "<br><br>";
 
-      $date_p2 = date(Y-m-d H:i:s);
+      $date_p2 = date('Y-m-d H:i:s');
       $_SESSION['date_p2'] = $date_p2;
-      fopen('Registro_10.txt', "w+");
+      $archivo = fopen('Registro_10.txt', 'w+');
       fwrite($archivo, ' '.$_SESSION['date_home'].';Ejercicio_10b.php'.PHP_EOL);
       fwrite($archivo, ' '.$_SESSION['date_p1'].';Ejercicio_10c.php'.PHP_EOL);
       fwrite($archivo, ' '.$_SESSION['date_p2'].';Ejercicio_10d.php'.PHP_EOL);
