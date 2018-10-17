@@ -7,7 +7,7 @@
   $conexion = new PDO("mysql: host=$servidor; dbname=$base", $usuario, $clave);
 
   $sql = 'select * from persona';
-  $ejec_sql = $conexion->prepare($sql);
+  $ejec_sql = $conexion -> prepare($sql);
   $ejec_sql -> execute();
 
   echo "<pre>";
@@ -22,8 +22,8 @@
 
   foreach ($registros as $key){
     $sql = "INSERT INTO persona (nombre, apellido, documento, edad) VALUES (:nombre, :apellido, :documento, :edad)";
-    $ejec_sql = $conexion->prepare($sql);
-    $ejec_sql ->execute($key);
+    $ejec_sql = $conexion -> prepare($sql);
+    $ejec_sql -> execute($key);
 }
 
   echo "</pre>";

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>
-      Ejercicio N°2
+      Ejercicio N°3
     </title>
   </head>
   <body>
-    <h4>Ejercicio N°2</h4>
-    <p>Listado de datos registrados en tabla persona de la base de datos "programacion1": </p>
+    <h4>Ejercicio N°3</h4>
+    <p>Listado de datos registrados en tabla persona de la base de datos programacion1: </p>
     <table border="2">
       <?php
         $servidor = 'localhost';
@@ -33,5 +33,7 @@
         }
        ?>
     </table>
+    <br><br>
+    <a href="Ejercicio_3.html">Agregar nuevo registro</a>
   </body>
 </html>
