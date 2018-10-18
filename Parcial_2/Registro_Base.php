@@ -9,13 +9,13 @@
   <body>
     <?php
       function conexion($servidor, $base, $user, $password){
-        return new PDO("mysql: host=$servidor; dbname=$base", $usuario, $clave);
+        return new PDO("mysql: host=$servidor; dbname=$base", $user, $password);
       }
 
       $conexion = conexion("localhost","programacion1", "andres", "231148");
       $estado = $conexion -> getAttribute(PDO::ATTR_CONNECTION_STATUS);
 
-      if($_POST["usr"]!="" && $_POST["pass"]!=""){
+      if($_POST['usr']!="" && $_POST['pass']!=""){
         $user = $_POST['usr'];
         $password = $_POST['pass'];
 
