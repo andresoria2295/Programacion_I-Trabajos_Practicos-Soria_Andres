@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>
-      Ejercicio N°2
+      Ejercicio N°5
     </title>
   </head>
   <body>
-    <h4>Ejercicio N°2</h4>
+    <h4>Ejercicio N°5</h4>
     <p>Listado de datos registrados en tabla persona de la base de datos "programacion1": </p>
     <table border="2">
       <?php
@@ -22,13 +22,19 @@
         $ejec_sql = $conexion -> prepare($sql);
         $ejec_sql -> execute();
 
-        while($fila = $ejec_sql -> fetch(PDO::FETCH_ASSOC)){
+        while ($fila = $ejec_sql -> fetch(PDO::FETCH_ASSOC)) {
           echo "<tr>";
-          foreach($fila as $campo){
+          foreach ($fila as $campo) {
             echo "<td>";
-            echo $campo;
+            echo "$campo";
             echo "</td>";
           }
+          echo "<td>";
+          echo "<a href='Ejercicio_5a.php?id=".$fila['id']."'>Borrar registro</a>";
+          echo "</td>";
+          echo "<td>";
+          echo "<a href='Ejercicio_5b.php?id=".$fila['id']."'>Editar registro</a>";
+          echo "</td>";
           echo "</tr>";
         }
        ?>
